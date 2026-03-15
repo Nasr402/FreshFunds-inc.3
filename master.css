@@ -1,0 +1,238 @@
+/* 
+background-attachment: fixed; لتلحقك الصورة 
+background-position: 50% 0%;
+background-position: 50px 0px;
+background-position: left center;
+background-size: 100% 100%;
+background-size: cover;
+background-size: contain;
+*/
+/* 
+padding: 10px ;
+
+*/
+/* 
+border-style: solid;
+border-color: rgb(255, 0, 0);
+border-width: 10px;
+*/
+/* .sin {
+    padding: 20px;
+    margin: auto;
+    color: deepskyblue;
+    font-size: 35px;
+    background-image: url("../oii.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    border-style: solid;
+    border-color: rgb(255, 0, 0);
+    border-width: 10px;
+    width: fit-content;
+
+} */
+:Root {
+    --mainColer: #ba292e;
+    --secColer: #191C24;
+}
+
+.bode {
+
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: 60px auto;
+    grid-template-areas:
+        "side side nav nav nav nav nav nav nav nav"
+        "side side cont cont cont cont cont cont cont cont";
+}
+
+.sidebar {
+    grid-area: side;
+    background-color: var(--secColer);
+    height: 100vh;
+    position: sticky;
+    top: 0;
+    margin-top: 0px;
+    z-index: 999;
+
+}
+
+.nav {
+    grid-area: nav;
+    background-color: var(--secColer);
+    height: 60px;
+    position: sticky;
+    top: 0;
+    box-shadow: #6f748b 0 1.5px 11px;
+}
+
+.nav::after {
+    content: "";
+    background-image: linear-gradient(to right, #ba292eb9 15%,
+            #6f748b 25%,
+            #6f748b 35%,
+            #ba292eb9 45%,
+            #ba292eb9 55%,
+            #6f748b 65%,
+            #6f748b 75%,
+            #ba292eb9 85%);
+    display: block;
+    width: 100%;
+    height: 2.5px;
+    position: relative;
+    bottom: 7px;
+}
+
+.sin {
+    display: flex;
+    background-image: url("../ds.jpg");
+    padding-bottom: 40px;
+    height: auto;
+    min-height: 425px;
+    flex-wrap: wrap;
+
+}
+
+.sin p {
+    color: var(--mainColer);
+    font-size: xx-large;
+    font-family: cursive;
+    padding: 0px 10px;
+    margin-left: 40px;
+    width: 500px;
+}
+
+.thep img {
+    border: solid var(--secColer) 5px;
+    border-radius: 6px;
+    aspect-ratio: 16 / 9;
+    height: auto;
+    width: 550px;
+    margin-top: 60px;
+    margin-left: 40px;
+}
+
+.services {
+    display: inline-block;
+    background-color: var(--secColer);
+    border-radius: 6px;
+    padding: 10px;
+    vertical-align: top;
+    margin: 0px 40px;
+}
+
+.tablya {
+    background-color: var(--secColer);
+    height: 300px;
+    width: 500px;
+    border-width: 3.5px;
+    border-color: blanchedalmond;
+    border-style: solid;
+    border-collapse: collapse;
+    border-spacing: 2px;
+
+}
+
+/* transition-duration: 1s;
+transition-delay: 0.2s;
+transition-property: width;
+transition-timing-function: ease-out; */
+.tablya td,
+.tablya th {
+    border: 3px solid blanchedalmond;
+    padding: 4px;
+}
+
+.tablya td {
+    color: #959bb8;
+    font-size: larger;
+    text-align: center;
+}
+
+.tabledad {
+    display: inline-block;
+    background-color: var(--secColer);
+    border-radius: 6px;
+    padding: 10px;
+
+}
+
+.square {
+    border-radius: 10px;
+    width: min-content;
+    max-width: 275px;
+    padding: 23px 50px;
+    background-color: var(--secColer);
+    margin: 15px;
+    box-sizing: border-box;
+    overflow-wrap: break-word;
+
+}
+
+.square img {
+    aspect-ratio: 1 / 1;
+    height: auto;
+    width: 175px;
+}
+
+.square p {
+    font-size: larger;
+    text-align: center;
+    padding-top: 5px;
+}
+
+.navbutton {
+    display: inline-block;
+    background-color: #00000000;
+    border: 0px;
+    cursor: pointer;
+    text-decoration: none;
+    color: #6f748b;
+    font-size: larger;
+    padding-bottom: 17.5px;
+}
+
+.navbutton:hover,
+.symtxt:hover {
+    color: #4c4f60;
+}
+
+.sym {
+    width: 40px;
+    height: 40px;
+    background-color: rgb(10, 10, 10);
+    border-radius: 50px;
+}
+
+.symtxt {
+    display: inline-block;
+    margin-left: 5px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    color: #6f748b;
+    padding-top: 7px;
+    font-size: larger;
+}
+
+
+.footer {
+    background-color: #1a1a1a;
+    /* border-top: 2px solid #1e293b; */
+    margin-top: 100px;
+    border-top: 4px solid var(--secColer);
+}
+
+
+
+.albutton {
+    font-size: larger;
+    width: 40%;
+    height: 100%;
+    background-color: var(--mainColer);
+    border-radius: 50px;
+    border: 3.5px solid;
+    cursor: pointer;
+}
+
+.albutton:hover {
+    background-color: #841d20;
+}
